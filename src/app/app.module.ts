@@ -7,19 +7,21 @@ import { UserComponent } from './components/user/user.component';
 import { AboutusComponent } from './components/aboutus/aboutus.component';
 import { FormsModule } from '@angular/forms'
 import { GetphotoService } from './services/getphoto.service'
-import { RouterModule, Routes } from "@angular/router"
+import { RouterModule, Routes } from "@angular/router";
+import { RunningmanComponent } from './components/runningman/runningman.component'
 
 const appRoutes:Routes = [
   {path:"", component:UserComponent},
-  {path:"about", component:AboutusComponent}
-
+  {path:"about", component:AboutusComponent},
+  {path:"run", component:RunningmanComponent}
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
-    AboutusComponent
+    AboutusComponent,
+    RunningmanComponent
   ],
   imports: [
     BrowserModule,

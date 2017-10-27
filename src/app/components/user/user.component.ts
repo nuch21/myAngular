@@ -31,12 +31,12 @@ export class UserComponent implements OnInit {
     this.age = 21;
     this.email = "kewali.hzt@g.swu.ac.th";
     this.address = {
-      street: "99 Dindeang-Road Dindeang",
+      street: "Ratchadaphisek Road",
       city: "Dindeang",
       province: "Bangkok",
       postcode: "10400"
     }
-    this.skills = ["Gaming", "Eating"];
+    this.skills = ["Sleeping", "Eating"];
     
     this.getphotoService.getPhotoList().subscribe((response) => {
      this.photoList = response;
